@@ -10,9 +10,16 @@ export default function Home() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-neutral-900 relative">
       {/* Adding the GIF image without transparency */}
-      <div className="absolute fixed left-0 w-full h-full">
-        <Image src="/images/bgpic2.gif" layout="fill" objectFit="cover" />
-      </div>
+      <div className="absolute left-0 w-full h-full">
+        <Image
+  src="/images/bgpic2.gif"
+  alt="Animated background of colorful visuals"
+  fill
+  unoptimized
+  style={{ objectFit: "cover" }}
+/>
+
+        </div>
       {/* Text content */}
       <div className="text-center text-white relative z-10">
         <a href={"/aboutpage"}>
